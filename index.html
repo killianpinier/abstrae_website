@@ -65,19 +65,127 @@
         }
 
         header {
-            padding: 4rem 2rem 6rem;
+            padding: 3rem 2rem 4rem;
             text-align: center;
             position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
         }
 
-        .logo {
-            font-size: 3rem;
+        .logo-container {
+            width: 120px;
+            height: 120px;
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(139, 92, 246, 0.4);
+        }
+        
+        .logo-background {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 50%, #06b6d4 100%);
+            position: relative;
+            animation: gradientShift 8s ease infinite;
+        }
+        
+        @keyframes gradientShift {
+            0%, 100% {
+                filter: hue-rotate(0deg);
+            }
+            50% {
+                filter: hue-rotate(20deg);
+            }
+        }
+        
+        .logo-background::before {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            top: -20px;
+            right: -20px;
+            animation: logoFloat 6s ease-in-out infinite;
+        }
+        
+        .logo-background::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            bottom: -10px;
+            left: -10px;
+            animation: logoFloat 8s ease-in-out infinite reverse;
+        }
+        
+        @keyframes logoFloat {
+            0%, 100% {
+                transform: translate(0, 0) scale(1);
+            }
+            50% {
+                transform: translate(-5px, -5px) scale(1.1);
+            }
+        }
+        
+        .ae-character {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 72px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            font-family: 'Space Grotesk', 'Arial', sans-serif;
+            z-index: 10;
+            animation: glow 3s ease-in-out infinite;
+        }
+        
+        @keyframes glow {
+            0%, 100% {
+                text-shadow: 0 5px 15px rgba(0, 0, 0, 0.4),
+                            0 0 20px rgba(255, 255, 255, 0.3);
+            }
+            50% {
+                text-shadow: 0 5px 15px rgba(0, 0, 0, 0.4),
+                            0 0 30px rgba(255, 255, 255, 0.5);
+            }
+        }
+        
+        .geometric-accent {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            animation: rotate 20s linear infinite;
+        }
+        
+        @keyframes rotate {
+            from {
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+            to {
+                transform: translate(-50%, -50%) rotate(405deg);
+            }
+        }
+
+        .logo-text {
+            font-size: 2.5rem;
             font-weight: 700;
             background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 50%, #06b6d4 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            margin-bottom: 1rem;
             letter-spacing: 0.02em;
         }
 
@@ -267,10 +375,25 @@
         }
 
         @media (max-width: 768px) {
-            .logo { font-size: 2.2rem; }
-            .content-card { padding: 2rem; }
-            header { padding: 3rem 2rem 4rem; }
-            .modal-content { padding: 2rem; }
+            .logo-container { 
+                width: 100px; 
+                height: 100px; 
+            }
+            .ae-character { 
+                font-size: 60px; 
+            }
+            .logo-text { 
+                font-size: 2rem; 
+            }
+            .content-card { 
+                padding: 2rem; 
+            }
+            header { 
+                padding: 2rem 2rem 3rem; 
+            }
+            .modal-content { 
+                padding: 2rem; 
+            }
         }
     </style>
 </head>
@@ -280,7 +403,12 @@
     <div class="floating-orb orb2"></div>
 
     <header>
-        <div class="logo">ABSTRAE</div>
+        <div class="logo-container">
+            <div class="logo-background"></div>
+            <div class="geometric-accent"></div>
+            <div class="ae-character">Æ</div>
+        </div>
+        <div class="logo-text">ABSTRAE</div>
     </header>
 
     <div class="container">
