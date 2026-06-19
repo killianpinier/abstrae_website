@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Platform — Abstrae</title>
+  <meta name="description" content="Assemble small, composable blocks into a tree that performs a task — while quantifying, with calibrated probability, that its outputs meet your specifications.">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="/" class="brand"><span class="brand-mark"><span></span></span><span class="brand-name">Abstrae</span></a>
+      <nav class="nav-links">
+        <a href="/platform/" class="nav-link active">Platform</a>
+        <a href="/services/" class="nav-link">Services</a>
+        <a href="/use-cases/" class="nav-link">Use Cases</a>
+        <a href="/about/" class="nav-link">About</a>
+        <a href="/contact/" class="nav-cta">Request a demo</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#14141a" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="glow glow-violet" style="top:-160px;left:50%;transform:translateX(-50%);width:1000px;height:620px;background:radial-gradient(ellipse at center,rgba(108,92,231,.14),transparent 60%)"></div>
+    <div class="hero-center">
+      <div class="pill" style="margin-bottom:26px"><span class="pill-dot"></span>The platform</div>
+      <h1 class="h1-sm" style="margin-bottom:22px">A guarantee on every output your agents produce.</h1>
+      <p class="lead" style="max-width:640px;margin:0 auto">Assemble small, composable blocks into a tree that performs a task — while quantifying, with calibrated probability, that its outputs meet your specifications.</p>
+    </div>
+    <div class="container-md" style="padding-top:40px;padding-bottom:70px;position:relative">
+      <div class="glow glow-violet" style="inset:20px 60px;background:radial-gradient(circle at 50% 40%,rgba(108,92,231,.16),transparent 62%);filter:blur(18px)"></div>
+      <div class="frame">
+        <div class="frame-bar"><i></i><i></i><i></i><span class="frame-title">Move Cube · activity graph</span></div>
+        <div class="activity-graph">
+
+          <div style="position:absolute;top:0;left:0;right:0;display:flex;align-items:center;gap:1.1cqw;padding:1.05cqw 1.4cqw;background:rgba(255,255,255,.92);backdrop-filter:blur(4px);border-bottom:1px solid #ededf2;z-index:5;">
+            <span style="width:2cqw;height:2cqw;border-radius:0.55cqw;background:#efecfd;display:flex;align-items:center;justify-content:center;flex:none;"><svg width="1.15cqw" height="1.15cqw" viewBox="0 0 24 24" fill="none" stroke="#5b4ee5" stroke-width="2.2"><rect x="3" y="3" width="7" height="7" rx="1.6"></rect><rect x="14" y="3" width="7" height="7" rx="1.6"></rect><rect x="3" y="14" width="7" height="7" rx="1.6"></rect><rect x="14" y="14" width="7" height="7" rx="1.6"></rect></svg></span>
+            <span style="font-size:1.32cqw;font-weight:650;letter-spacing:-0.01em;color:#1a1a22;">Move Cube</span>
+            <span style="color:#d2d2da;font-size:1.1cqw;">/</span>
+            <span style="font-size:1.15cqw;color:#9a9aa4;">Activity graph</span>
+            <div style="display:flex;align-items:center;gap:0.2cqw;margin-left:0.6cqw;background:#f2f2f5;border:1px solid #e9e9ee;border-radius:0.7cqw;padding:0.24cqw;">
+              <span style="font-size:0.95cqw;font-weight:600;color:#2c2c36;background:#fff;border:1px solid #e6e6eb;border-radius:0.5cqw;padding:0.34cqw 0.85cqw;box-shadow:0 1px 1.5px rgba(20,22,45,.05);">Graph</span>
+              <span style="font-size:0.95cqw;font-weight:500;color:#9a9aa4;padding:0.34cqw 0.8cqw;">Timeline</span>
+              <span style="font-size:0.95cqw;font-weight:500;color:#9a9aa4;padding:0.34cqw 0.8cqw;">Logs</span>
+            </div>
+            <span style="flex:1;"></span>
+            <span style="display:inline-flex;align-items:center;gap:0.5cqw;font-family:'Geist Mono',monospace;font-size:0.95cqw;font-weight:600;color:#0e9f6e;border:1px solid #cdeede;background:#ecfbf4;padding:0.3cqw 0.75cqw;border-radius:100px;"><span style="width:0.6cqw;height:0.6cqw;border-radius:50%;background:#10b981;box-shadow:0 0 0.5cqw rgba(16,185,129,.6);"></span>Live</span>
+            <span style="font-family:'Geist Mono',monospace;font-size:0.95cqw;color:#adacb5;white-space:nowrap;">10 nodes · 3 levels</span>
+          </div>
+
+          <svg viewBox="0 0 1000 600" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;">
+            <path d="M500 152 V214 Q500 226 488 226 H212 Q200 226 200 238 V270" fill="none" stroke="#bcb4ea" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M500 152 V270" fill="none" stroke="#5b4ee5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M500 152 V214 Q500 226 512 226 H788 Q800 226 800 238 V270" fill="none" stroke="#d8d8e1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M200 332 V376 Q200 388 188 388 H77 Q65 388 65 400 V434" fill="none" stroke="#bcb4ea" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M200 332 V434" fill="none" stroke="#bcb4ea" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M200 332 V376 Q200 388 212 388 H330 Q342 388 342 400 V434" fill="none" stroke="#bcb4ea" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M800 332 V376 Q800 388 788 388 H670 Q658 388 658 400 V434" fill="none" stroke="#d8d8e1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M800 332 V434" fill="none" stroke="#d8d8e1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M800 332 V376 Q800 388 812 388 H923 Q935 388 935 400 V434" fill="none" stroke="#d8d8e1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M500 332 V408" fill="none" stroke="#5b4ee5" stroke-width="2" stroke-dasharray="4 5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle cx="500" cy="152" r="3.4" fill="#5b4ee5" stroke="#5b4ee5" stroke-width="1.5"></circle>
+            <circle cx="200" cy="270" r="3.4" fill="#ffffff" stroke="#c9c9d3" stroke-width="1.5"></circle>
+            <circle cx="500" cy="270" r="3.4" fill="#5b4ee5" stroke="#5b4ee5" stroke-width="1.5"></circle>
+            <circle cx="800" cy="270" r="3.4" fill="#ffffff" stroke="#c9c9d3" stroke-width="1.5"></circle>
+            <circle cx="200" cy="332" r="3.4" fill="#ffffff" stroke="#c9c9d3" stroke-width="1.5"></circle>
+            <circle cx="500" cy="332" r="3.4" fill="#5b4ee5" stroke="#5b4ee5" stroke-width="1.5"></circle>
+            <circle cx="800" cy="332" r="3.4" fill="#ffffff" stroke="#c9c9d3" stroke-width="1.5"></circle>
+            <circle cx="65" cy="434" r="3.4" fill="#ffffff" stroke="#c9c9d3" stroke-width="1.5"></circle>
+            <circle cx="200" cy="434" r="3.4" fill="#ffffff" stroke="#c9c9d3" stroke-width="1.5"></circle>
+            <circle cx="342" cy="434" r="3.4" fill="#ffffff" stroke="#c9c9d3" stroke-width="1.5"></circle>
+            <circle cx="658" cy="434" r="3.4" fill="#ffffff" stroke="#c9c9d3" stroke-width="1.5"></circle>
+            <circle cx="800" cy="434" r="3.4" fill="#ffffff" stroke="#c9c9d3" stroke-width="1.5"></circle>
+            <circle cx="935" cy="434" r="3.4" fill="#ffffff" stroke="#c9c9d3" stroke-width="1.5"></circle>
+          </svg>
+
+          <div style="position:absolute;left:50%;top:20%;transform:translate(-50%,-50%);width:16.5cqw;height:6.4cqw;box-sizing:border-box;background:#fff;border:1px solid #e7e7ee;border-radius:0.95cqw;box-shadow:0 1px 2px rgba(20,22,45,.05),0 12px 26px -16px rgba(20,22,45,.3);overflow:hidden;display:flex;flex-direction:column;justify-content:center;">
+            <span style="position:absolute;left:0;top:0;bottom:0;width:0.32cqw;background:#5b4ee5;"></span>
+            <div style="padding:0 1cqw 0 1.4cqw;display:flex;flex-direction:column;gap:0.5cqw;">
+              <div style="display:flex;align-items:center;gap:0.7cqw;">
+                <span style="width:2.4cqw;height:2.4cqw;border-radius:0.65cqw;background:#efecfd;display:flex;align-items:center;justify-content:center;flex:none;"><svg width="1.4cqw" height="1.4cqw" viewBox="0 0 24 24" fill="none" stroke="#5b4ee5" stroke-width="2.1"><rect x="3" y="3" width="7" height="7" rx="1.6"></rect><rect x="14" y="3" width="7" height="7" rx="1.6"></rect><rect x="3" y="14" width="7" height="7" rx="1.6"></rect><rect x="14" y="14" width="7" height="7" rx="1.6"></rect></svg></span>
+                <span style="flex:1;font-size:1.36cqw;font-weight:600;color:#1b1b24;line-height:1;white-space:nowrap;">Move Object</span>
+                <span style="position:relative;width:1.7cqw;height:1.7cqw;display:flex;align-items:center;justify-content:center;flex:none;"><span style="position:absolute;inset:0;border-radius:50%;border:1.5px solid #5b4ee5;opacity:.3;"></span><span style="width:0.75cqw;height:0.75cqw;border-radius:50%;background:#5b4ee5;animation:agpulse 1.5s ease-in-out infinite;"></span></span>
+              </div>
+              <div style="display:flex;align-items:center;gap:0.45cqw;font-family:'Geist Mono',monospace;font-size:0.9cqw;color:#a4a4ad;white-space:nowrap;"><span style="color:#5b4ee5;font-weight:600;letter-spacing:0.08em;">MANAGER</span><span>·</span><span>3 subtasks</span></div>
+            </div>
+          </div>
+
+          <div style="position:absolute;left:20%;top:50%;transform:translate(-50%,-50%);width:16cqw;height:6.4cqw;box-sizing:border-box;background:#fff;border:1px solid #e7e7ee;border-radius:0.95cqw;box-shadow:0 1px 2px rgba(20,22,45,.05),0 12px 26px -16px rgba(20,22,45,.3);overflow:hidden;display:flex;flex-direction:column;justify-content:center;">
+            <span style="position:absolute;left:0;top:0;bottom:0;width:0.32cqw;background:#5b4ee5;"></span>
+            <div style="padding:0 1cqw 0 1.4cqw;display:flex;flex-direction:column;gap:0.5cqw;">
+              <div style="display:flex;align-items:center;gap:0.7cqw;">
+                <span style="width:2.4cqw;height:2.4cqw;border-radius:0.65cqw;background:#efecfd;display:flex;align-items:center;justify-content:center;flex:none;"><svg width="1.4cqw" height="1.4cqw" viewBox="0 0 24 24" fill="none" stroke="#5b4ee5" stroke-width="2.1"><rect x="3" y="3" width="7" height="7" rx="1.6"></rect><rect x="14" y="3" width="7" height="7" rx="1.6"></rect><rect x="3" y="14" width="7" height="7" rx="1.6"></rect><rect x="14" y="14" width="7" height="7" rx="1.6"></rect></svg></span>
+                <span style="flex:1;font-size:1.32cqw;font-weight:600;color:#1b1b24;line-height:1;white-space:nowrap;">Grab Object</span>
+                <span style="width:1.7cqw;height:1.7cqw;border-radius:50%;background:#10b981;display:flex;align-items:center;justify-content:center;flex:none;"><svg width="1cqw" height="1cqw" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 7"></path></svg></span>
+              </div>
+              <div style="display:flex;align-items:center;gap:0.45cqw;font-family:'Geist Mono',monospace;font-size:0.9cqw;color:#a4a4ad;white-space:nowrap;"><span style="color:#5b4ee5;font-weight:600;letter-spacing:0.08em;">MANAGER</span><span>·</span><span style="color:#0e9f6e;">done</span><span>·</span><span>0.9s</span></div>
+            </div>
+          </div>
+
+          <div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:16cqw;height:6.4cqw;box-sizing:border-box;background:#fff;border:1px solid #cfc8f4;border-radius:0.95cqw;box-shadow:0 0 0 0.34cqw rgba(91,78,229,.12),0 1px 2px rgba(20,22,45,.05),0 14px 30px -14px rgba(60,45,150,.4);overflow:hidden;display:flex;flex-direction:column;justify-content:center;">
+            <span style="position:absolute;left:0;top:0;bottom:0;width:0.32cqw;background:#10b981;"></span>
+            <div style="padding:0 1cqw 0 1.4cqw;display:flex;flex-direction:column;gap:0.5cqw;">
+              <div style="display:flex;align-items:center;gap:0.7cqw;">
+                <span style="width:2.4cqw;height:2.4cqw;border-radius:0.65cqw;background:#e7f7f0;display:flex;align-items:center;justify-content:center;flex:none;"><svg width="1.4cqw" height="1.4cqw" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linejoin="round"><path d="M12 2 3 7v10l9 5 9-5V7z"></path><circle cx="12" cy="12" r="3.1"></circle></svg></span>
+                <span style="flex:1;font-size:1.32cqw;font-weight:600;color:#1b1b24;line-height:1;white-space:nowrap;">Get Object</span>
+                <span style="position:relative;width:1.7cqw;height:1.7cqw;display:flex;align-items:center;justify-content:center;flex:none;"><span style="position:absolute;inset:0;border-radius:50%;border:1.5px solid #10b981;opacity:.3;"></span><span style="width:0.75cqw;height:0.75cqw;border-radius:50%;background:#10b981;animation:agpulse 1.5s ease-in-out infinite;"></span></span>
+              </div>
+              <div style="display:flex;align-items:center;gap:0.45cqw;font-family:'Geist Mono',monospace;font-size:0.9cqw;color:#a4a4ad;white-space:nowrap;"><span style="color:#0e9f6e;font-weight:600;letter-spacing:0.08em;">WORKER</span><span>·</span><span style="color:#0e9f6e;">running</span></div>
+            </div>
+          </div>
+
+          <div style="position:absolute;left:80%;top:50%;transform:translate(-50%,-50%);width:16cqw;height:6.4cqw;box-sizing:border-box;background:#fff;border:1px solid #e7e7ee;border-radius:0.95cqw;box-shadow:0 1px 2px rgba(20,22,45,.05),0 12px 26px -16px rgba(20,22,45,.3);overflow:hidden;display:flex;flex-direction:column;justify-content:center;">
+            <span style="position:absolute;left:0;top:0;bottom:0;width:0.32cqw;background:#c8c5d4;"></span>
+            <div style="padding:0 1cqw 0 1.4cqw;display:flex;flex-direction:column;gap:0.5cqw;">
+              <div style="display:flex;align-items:center;gap:0.7cqw;">
+                <span style="width:2.4cqw;height:2.4cqw;border-radius:0.65cqw;background:#f2f2f5;display:flex;align-items:center;justify-content:center;flex:none;"><svg width="1.4cqw" height="1.4cqw" viewBox="0 0 24 24" fill="none" stroke="#8d8c97" stroke-width="2.1"><rect x="3" y="3" width="7" height="7" rx="1.6"></rect><rect x="14" y="3" width="7" height="7" rx="1.6"></rect><rect x="3" y="14" width="7" height="7" rx="1.6"></rect><rect x="14" y="14" width="7" height="7" rx="1.6"></rect></svg></span>
+                <span style="flex:1;font-size:1.32cqw;font-weight:600;color:#57575f;line-height:1;white-space:nowrap;">Place Object</span>
+                <span style="width:1.55cqw;height:1.55cqw;border-radius:50%;border:1.6px solid #d0d0d8;flex:none;"></span>
+              </div>
+              <div style="display:flex;align-items:center;gap:0.45cqw;font-family:'Geist Mono',monospace;font-size:0.9cqw;color:#b3b2bb;white-space:nowrap;"><span style="font-weight:600;letter-spacing:0.08em;">MANAGER</span><span>·</span><span>queued</span></div>
+            </div>
+          </div>
+
+          <div style="position:absolute;left:6.5%;top:77%;transform:translate(-50%,-50%);width:11.9cqw;height:5.6cqw;box-sizing:border-box;background:#fff;border:1px solid #e7e7ee;border-radius:0.85cqw;box-shadow:0 1px 2px rgba(20,22,45,.04),0 10px 22px -16px rgba(20,22,45,.26);overflow:hidden;display:flex;flex-direction:column;justify-content:center;">
+            <span style="position:absolute;left:0;top:0;bottom:0;width:0.3cqw;background:#10b981;"></span>
+            <div style="padding:0 0.85cqw 0 1.25cqw;display:flex;flex-direction:column;gap:0.4cqw;">
+              <div style="display:flex;align-items:center;gap:0.6cqw;">
+                <span style="width:1.85cqw;height:1.85cqw;border-radius:0.5cqw;background:#e7f7f0;display:flex;align-items:center;justify-content:center;flex:none;"><svg width="1.2cqw" height="1.2cqw" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linejoin="round"><path d="M12 2 3 7v10l9 5 9-5V7z"></path><circle cx="12" cy="12" r="3.1"></circle></svg></span>
+                <span style="flex:1;font-size:1.02cqw;font-weight:600;color:#1b1b24;line-height:1;white-space:nowrap;">Find Grab Pose</span>
+                <span style="width:1.45cqw;height:1.45cqw;border-radius:50%;background:#10b981;display:flex;align-items:center;justify-content:center;flex:none;"><svg width="0.85cqw" height="0.85cqw" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 7"></path></svg></span>
+              </div>
+              <div style="font-family:'Geist Mono',monospace;font-size:0.82cqw;color:#a4a4ad;padding-left:2.45cqw;"><span style="color:#0e9f6e;font-weight:600;letter-spacing:0.07em;">WORKER</span> · 0.3s</div>
+            </div>
+          </div>
+
+          <div style="position:absolute;left:20%;top:77%;transform:translate(-50%,-50%);width:11.9cqw;height:5.6cqw;box-sizing:border-box;background:#fff;border:1px solid #e7e7ee;border-radius:0.85cqw;box-shadow:0 1px 2px rgba(20,22,45,.04),0 10px 22px -16px rgba(20,22,45,.26);overflow:hidden;display:flex;flex-direction:column;justify-content:center;">
+            <span style="position:absolute;left:0;top:0;bottom:0;width:0.3cqw;background:#10b981;"></span>
+            <div style="padding:0 0.85cqw 0 1.25cqw;display:flex;flex-direction:column;gap:0.4cqw;">
+              <div style="display:flex;align-items:center;gap:0.6cqw;">
+                <span style="width:1.85cqw;height:1.85cqw;border-radius:0.5cqw;background:#e7f7f0;display:flex;align-items:center;justify-content:center;flex:none;"><svg width="1.2cqw" height="1.2cqw" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linejoin="round"><path d="M12 2 3 7v10l9 5 9-5V7z"></path><circle cx="12" cy="12" r="3.1"></circle></svg></span>
+                <span style="flex:1;font-size:1.02cqw;font-weight:600;color:#1b1b24;line-height:1;white-space:nowrap;">Go To</span>
+                <span style="width:1.45cqw;height:1.45cqw;border-radius:50%;background:#10b981;display:flex;align-items:center;justify-content:center;flex:none;"><svg width="0.85cqw" height="0.85cqw" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 7"></path></svg></span>
+              </div>
+              <div style="font-family:'Geist Mono',monospace;font-size:0.82cqw;color:#a4a4ad;padding-left:2.45cqw;"><span style="color:#0e9f6e;font-weight:600;letter-spacing:0.07em;">WORKER</span> · 0.5s</div>
+            </div>
+          </div>
+
+          <div style="position:absolute;left:34.2%;top:77%;transform:translate(-50%,-50%);width:11.9cqw;height:5.6cqw;box-sizing:border-box;background:#fff;border:1px solid #e7e7ee;border-radius:0.85cqw;box-shadow:0 1px 2px rgba(20,22,45,.04),0 10px 22px -16px rgba(20,22,45,.26);overflow:hidden;display:flex;flex-direction:column;justify-content:center;">
+            <span style="position:absolute;left:0;top:0;bottom:0;width:0.3cqw;background:#10b981;"></span>
+            <div style="padding:0 0.85cqw 0 1.25cqw;display:flex;flex-direction:column;gap:0.4cqw;">
+              <div style="display:flex;align-items:center;gap:0.6cqw;">
+                <span style="width:1.85cqw;height:1.85cqw;border-radius:0.5cqw;background:#e7f7f0;display:flex;align-items:center;justify-content:center;flex:none;"><svg width="1.2cqw" height="1.2cqw" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linejoin="round"><path d="M12 2 3 7v10l9 5 9-5V7z"></path><circle cx="12" cy="12" r="3.1"></circle></svg></span>
+                <span style="flex:1;font-size:1.02cqw;font-weight:600;color:#1b1b24;line-height:1;white-space:nowrap;">Grab</span>
+                <span style="width:1.45cqw;height:1.45cqw;border-radius:50%;background:#10b981;display:flex;align-items:center;justify-content:center;flex:none;"><svg width="0.85cqw" height="0.85cqw" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 7"></path></svg></span>
+              </div>
+              <div style="font-family:'Geist Mono',monospace;font-size:0.82cqw;color:#a4a4ad;padding-left:2.45cqw;"><span style="color:#0e9f6e;font-weight:600;letter-spacing:0.07em;">WORKER</span> · 0.4s</div>
+            </div>
+          </div>
+
+          <div style="position:absolute;left:65.8%;top:77%;transform:translate(-50%,-50%);width:11.9cqw;height:5.6cqw;box-sizing:border-box;background:#fff;border:1px solid #ededf1;border-radius:0.85cqw;box-shadow:0 1px 2px rgba(20,22,45,.03);overflow:hidden;display:flex;flex-direction:column;justify-content:center;">
+            <span style="position:absolute;left:0;top:0;bottom:0;width:0.3cqw;background:#d9d9e0;"></span>
+            <div style="padding:0 0.85cqw 0 1.25cqw;display:flex;flex-direction:column;gap:0.4cqw;">
+              <div style="display:flex;align-items:center;gap:0.6cqw;">
+                <span style="width:1.85cqw;height:1.85cqw;border-radius:0.5cqw;background:#f3f3f6;display:flex;align-items:center;justify-content:center;flex:none;"><svg width="1.2cqw" height="1.2cqw" viewBox="0 0 24 24" fill="none" stroke="#a7a6b0" stroke-width="2" stroke-linejoin="round"><path d="M12 2 3 7v10l9 5 9-5V7z"></path><circle cx="12" cy="12" r="3.1"></circle></svg></span>
+                <span style="flex:1;font-size:1.02cqw;font-weight:600;color:#6a6a73;line-height:1;white-space:nowrap;">Find Place Pose</span>
+                <span style="width:1.35cqw;height:1.35cqw;border-radius:50%;border:1.5px solid #d4d4dc;flex:none;"></span>
+              </div>
+              <div style="font-family:'Geist Mono',monospace;font-size:0.82cqw;color:#b7b6bf;padding-left:2.45cqw;"><span style="font-weight:600;letter-spacing:0.07em;">WORKER</span> · queued</div>
+            </div>
+          </div>
+
+          <div style="position:absolute;left:80%;top:77%;transform:translate(-50%,-50%);width:11.9cqw;height:5.6cqw;box-sizing:border-box;background:#fff;border:1px solid #ededf1;border-radius:0.85cqw;box-shadow:0 1px 2px rgba(20,22,45,.03);overflow:hidden;display:flex;flex-direction:column;justify-content:center;">
+            <span style="position:absolute;left:0;top:0;bottom:0;width:0.3cqw;background:#d9d9e0;"></span>
+            <div style="padding:0 0.85cqw 0 1.25cqw;display:flex;flex-direction:column;gap:0.4cqw;">
+              <div style="display:flex;align-items:center;gap:0.6cqw;">
+                <span style="width:1.85cqw;height:1.85cqw;border-radius:0.5cqw;background:#f3f3f6;display:flex;align-items:center;justify-content:center;flex:none;"><svg width="1.2cqw" height="1.2cqw" viewBox="0 0 24 24" fill="none" stroke="#a7a6b0" stroke-width="2" stroke-linejoin="round"><path d="M12 2 3 7v10l9 5 9-5V7z"></path><circle cx="12" cy="12" r="3.1"></circle></svg></span>
+                <span style="flex:1;font-size:1.02cqw;font-weight:600;color:#6a6a73;line-height:1;white-space:nowrap;">Go To</span>
+                <span style="width:1.35cqw;height:1.35cqw;border-radius:50%;border:1.5px solid #d4d4dc;flex:none;"></span>
+              </div>
+              <div style="font-family:'Geist Mono',monospace;font-size:0.82cqw;color:#b7b6bf;padding-left:2.45cqw;"><span style="font-weight:600;letter-spacing:0.07em;">WORKER</span> · queued</div>
+            </div>
+          </div>
+
+          <div style="position:absolute;left:93.5%;top:77%;transform:translate(-50%,-50%);width:11.9cqw;height:5.6cqw;box-sizing:border-box;background:#fff;border:1px solid #ededf1;border-radius:0.85cqw;box-shadow:0 1px 2px rgba(20,22,45,.03);overflow:hidden;display:flex;flex-direction:column;justify-content:center;">
+            <span style="position:absolute;left:0;top:0;bottom:0;width:0.3cqw;background:#d9d9e0;"></span>
+            <div style="padding:0 0.85cqw 0 1.25cqw;display:flex;flex-direction:column;gap:0.4cqw;">
+              <div style="display:flex;align-items:center;gap:0.6cqw;">
+                <span style="width:1.85cqw;height:1.85cqw;border-radius:0.5cqw;background:#f3f3f6;display:flex;align-items:center;justify-content:center;flex:none;"><svg width="1.2cqw" height="1.2cqw" viewBox="0 0 24 24" fill="none" stroke="#a7a6b0" stroke-width="2" stroke-linejoin="round"><path d="M12 2 3 7v10l9 5 9-5V7z"></path><circle cx="12" cy="12" r="3.1"></circle></svg></span>
+                <span style="flex:1;font-size:1.02cqw;font-weight:600;color:#6a6a73;line-height:1;white-space:nowrap;">Release</span>
+                <span style="width:1.35cqw;height:1.35cqw;border-radius:50%;border:1.5px solid #d4d4dc;flex:none;"></span>
+              </div>
+              <div style="font-family:'Geist Mono',monospace;font-size:0.82cqw;color:#b7b6bf;padding-left:2.45cqw;"><span style="font-weight:600;letter-spacing:0.07em;">WORKER</span> · queued</div>
+            </div>
+          </div>
+
+          <div style="position:absolute;left:50%;top:68%;transform:translateX(-50%);width:18.5cqw;box-sizing:border-box;background:#fff;border:1px solid #e4e1f4;border-radius:0.9cqw;box-shadow:0 1px 2px rgba(20,22,45,.05),0 16px 32px -18px rgba(60,45,150,.42);padding:0.95cqw 1.1cqw;display:flex;flex-direction:column;gap:0.7cqw;">
+            <div style="display:flex;align-items:center;gap:0.55cqw;"><span style="font-family:'Geist Mono',monospace;font-size:0.78cqw;letter-spacing:0.14em;color:#b0afba;">INSPECTOR</span><span style="flex:1;"></span><span style="font-family:'Geist Mono',monospace;font-size:0.78cqw;color:#5b4ee5;background:#f1eefe;padding:0.18cqw 0.5cqw;border-radius:0.35cqw;letter-spacing:0.06em;">WORKER</span></div>
+            <div style="font-size:1.2cqw;font-weight:600;color:#1b1b24;">Get Object</div>
+            <div style="display:flex;flex-direction:column;gap:0.42cqw;font-family:'Geist Mono',monospace;font-size:0.88cqw;">
+              <div style="display:flex;justify-content:space-between;"><span style="color:#a4a4ad;">Status</span><span style="color:#0e9f6e;display:inline-flex;align-items:center;gap:0.4cqw;"><span style="width:0.55cqw;height:0.55cqw;border-radius:50%;background:#10b981;"></span>Running</span></div>
+              <div style="display:flex;justify-content:space-between;"><span style="color:#a4a4ad;">Confidence</span><span style="color:#38373f;white-space:nowrap;">0.85 <span style="color:#b7b6bf;">±0.06</span></span></div>
+              <div style="display:flex;justify-content:space-between;"><span style="color:#a4a4ad;">Elapsed</span><span style="color:#38373f;">1.2s</span></div>
+            </div>
+            <div style="height:0.5cqw;border-radius:0.25cqw;background:#efeef4;overflow:hidden;"><div style="width:85%;height:100%;background:linear-gradient(90deg,#7a6ef0,#5b4ee5);border-radius:0.25cqw;"></div></div>
+          </div>
+
+          <div style="position:absolute;left:50%;bottom:1.9cqw;transform:translateX(-50%);display:flex;align-items:center;gap:1.3cqw;background:rgba(255,255,255,.85);backdrop-filter:blur(3px);border:1px solid #ededf2;border-radius:100px;padding:0.45cqw 1.1cqw;font-size:0.88cqw;color:#8a8a95;z-index:4;">
+            <span style="display:inline-flex;align-items:center;gap:0.45cqw;"><span style="width:0.7cqw;height:0.7cqw;border-radius:50%;background:#10b981;"></span>Done</span>
+            <span style="display:inline-flex;align-items:center;gap:0.45cqw;"><span style="width:0.7cqw;height:0.7cqw;border-radius:50%;background:#5b4ee5;"></span>Running</span>
+            <span style="display:inline-flex;align-items:center;gap:0.45cqw;"><span style="width:0.7cqw;height:0.7cqw;border-radius:50%;border:1.5px solid #cdcdd6;"></span>Queued</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUILDING BLOCKS -->
+  <section class="container section-tight">
+    <div class="head">
+      <div class="eyebrow">Building blocks</div>
+      <h2 class="h2-sm" style="max-width:640px">Four ideas, composed into reliable autonomy</h2>
+    </div>
+    <div class="grid-2">
+      <div class="card-lg"><div class="kicker">01 · Activities</div><h3 style="font-size:20px;font-weight:650;margin-bottom:10px">Workers and managers</h3><p style="font-size:15px;line-height:1.6;color:#65656f">Workers run actual code; managers wire child activities together and impose demands on them. Compose them into a tree that performs your task end to end.</p></div>
+      <div class="card-lg"><div class="kicker">02 · Causal models</div><h3 style="font-size:20px;font-weight:650;margin-bottom:10px">Physics-aware structure</h3><p style="font-size:15px;line-height:1.6;color:#65656f">Each activity carries a small model that turns realized measurements into a belief about an outcome — encoding why things happen, not just that they correlate.</p></div>
+      <div class="card-lg"><div class="kicker">03 · Specifications</div><h3 style="font-size:20px;font-weight:650;margin-bottom:10px">Demands with a threshold</h3><p style="font-size:15px;line-height:1.6;color:#65656f">A specification is a condition on an output plus a confidence threshold — the same step can be demanded loosely in one context and strictly in another.</p></div>
+      <div class="card-lg"><div class="kicker">04 · Confidence gating</div><h3 style="font-size:20px;font-weight:650;margin-bottom:10px">Act only when sure enough</h3><p style="font-size:15px;line-height:1.6;color:#65656f">At runtime a step passes only when its calibrated confidence clears the demanded threshold. What can't be guaranteed is surfaced rather than silently risked.</p></div>
+    </div>
+  </section>
+
+  <!-- FOUR STEP FLOW -->
+  <section class="container section">
+    <div class="head">
+      <div class="eyebrow">The flow</div>
+      <h2 class="h2-sm">From expert judgment to autonomous action</h2>
+    </div>
+    <div class="grid-4">
+      <div class="step-card"><span class="step-num">1</span><h3>Capture knowledge</h3><p>Encode expertise as a causal model of specs, problems and signals.</p></div>
+      <div class="step-card"><span class="step-num">2</span><h3>Build agents</h3><p>Compose workers and managers into a tree that performs the task.</p></div>
+      <div class="step-card"><span class="step-num">3</span><h3>Learn from experience</h3><p>Calibrate against ground truth with Bayesian, ML and RL methods.</p></div>
+      <div class="step-card"><span class="step-num grad">4</span><h3>Detect, decide, improve</h3><p>Gate decisions on confidence, act when sure, and sharpen over time.</p></div>
+    </div>
+  </section>
+
+  <!-- DARK RUNTIME BAND -->
+  <section class="band-dark" style="margin-top:70px">
+    <div class="glow glow-violet" style="top:-160px;left:14%;width:660px;height:600px"></div>
+    <div class="glow glow-cyan" style="top:80px;right:-120px;width:600px;height:560px"></div>
+    <div class="container">
+      <div class="band-center">
+        <div class="pill pill-dark" style="margin-bottom:22px"><span class="pill-dot"></span>Runtime</div>
+        <h2 class="h2-sm">See every decision as it happens</h2>
+        <p>The control center traces specs, problems and the live scene step by step — so you always know what an agent believed, and why it acted.</p>
+      </div>
+      <div class="frame-dark">
+        <div class="control-center">
+
+          <!-- TOP RUN BAR -->
+          <div style="display:flex;align-items:center;gap:1.2cqw;padding:1cqw 1.3cqw;background:#0c1020;border:1px solid rgba(255,255,255,.07);border-radius:1.3cqw;">
+            <span style="font-family:'Geist Mono',monospace;font-size:1.15cqw;color:#6f778f;">‹ Config</span>
+            <span style="font-size:1.55cqw;font-weight:700;color:#fff;letter-spacing:-0.01em;">Move Object</span>
+            <span style="display:inline-flex;align-items:center;gap:0.55cqw;font-family:'Geist Mono',monospace;font-size:1.1cqw;font-weight:600;color:#34d399;border:1px solid rgba(52,211,153,.32);background:rgba(52,211,153,.08);padding:0.4cqw 0.8cqw;border-radius:100px;"><span style="width:0.7cqw;height:0.7cqw;border-radius:50%;background:#34d399;animation:ccpulse 1.4s ease-in-out infinite;"></span>RUNNING</span>
+            <span style="font-family:'Geist Mono',monospace;font-size:1.1cqw;color:#aab0c4;border:1px solid rgba(255,255,255,.1);padding:0.4cqw 0.8cqw;border-radius:0.7cqw;">10.1s</span>
+            <span style="font-family:'Geist Mono',monospace;font-size:1.1cqw;color:#aab0c4;border:1px solid rgba(255,255,255,.1);padding:0.4cqw 0.8cqw;border-radius:0.7cqw;">1 / 3 steps</span>
+            <span style="flex:1;"></span>
+            <span style="display:inline-flex;align-items:center;border:1px solid rgba(255,255,255,.1);border-radius:0.8cqw;overflow:hidden;font-family:'Geist Mono',monospace;font-size:1.05cqw;">
+              <span style="padding:0.45cqw 0.8cqw;color:#6f778f;">0.5×</span>
+              <span style="padding:0.45cqw 0.8cqw;color:#070912;background:#22d3ee;font-weight:600;">1×</span>
+              <span style="padding:0.45cqw 0.8cqw;color:#6f778f;">2×</span>
+              <span style="padding:0.45cqw 0.8cqw;color:#6f778f;">4×</span>
+            </span>
+            <span style="display:inline-flex;align-items:center;gap:0.5cqw;font-size:1.1cqw;font-weight:600;color:#070912;background:#22d3ee;padding:0.5cqw 1cqw;border-radius:0.8cqw;">▶ Start</span>
+            <span style="font-size:1.1cqw;font-weight:500;color:#aab0c4;border:1px solid rgba(255,255,255,.12);padding:0.5cqw 0.9cqw;border-radius:0.8cqw;">Pause</span>
+            <span style="font-size:1.1cqw;font-weight:500;color:#aab0c4;border:1px solid rgba(255,255,255,.12);padding:0.5cqw 0.9cqw;border-radius:0.8cqw;">Restart</span>
+          </div>
+
+          <!-- BODY -->
+          <div style="display:flex;gap:1.8cqw;align-items:stretch;">
+
+            <!-- LEFT: MISSION TREE -->
+            <div style="flex:none;width:21cqw;background:#0c1020;border:1px solid rgba(255,255,255,.07);border-radius:1.4cqw;padding:1.4cqw;display:flex;flex-direction:column;gap:1cqw;">
+              <div style="font-family:'Geist Mono',monospace;font-size:0.95cqw;letter-spacing:0.18em;text-align:center;color:#5d6480;">CONTROL CENTER</div>
+              <div style="height:1px;background:rgba(255,255,255,.07);"></div>
+              <div style="display:flex;align-items:center;gap:0.7cqw;">
+                <span style="font-size:1.5cqw;font-weight:700;color:#fff;">Mission</span>
+                <span style="font-family:'Geist Mono',monospace;font-size:1cqw;color:#6f778f;">10 activities · live</span>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:0.4cqw;">
+                <div style="display:flex;align-items:center;gap:0.7cqw;padding:0.65cqw 0.7cqw;border-radius:0.8cqw;">
+                  <span style="width:2.1cqw;height:2.1cqw;border-radius:0.6cqw;background:rgba(124,108,231,.16);display:flex;align-items:center;justify-content:center;flex:none;"><svg width="1.3cqw" height="1.3cqw" viewBox="0 0 24 24" fill="none" stroke="#a99cf5" stroke-width="2.2"><rect x="3" y="3" width="7" height="7" rx="1.6"></rect><rect x="14" y="3" width="7" height="7" rx="1.6"></rect><rect x="3" y="14" width="7" height="7" rx="1.6"></rect><rect x="14" y="14" width="7" height="7" rx="1.6"></rect></svg></span>
+                  <span style="display:flex;flex-direction:column;min-width:0;"><span style="font-size:1.2cqw;font-weight:600;color:#eef0f6;white-space:nowrap;">Move Object</span><span style="font-family:'Geist Mono',monospace;font-size:0.82cqw;letter-spacing:0.08em;color:#8a7fd6;">MANAGER</span></span>
+                  <span style="flex:1;"></span>
+                  <svg width="1.3cqw" height="1.3cqw" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+                </div>
+                <div style="display:flex;align-items:center;gap:0.7cqw;padding:0.65cqw 0.7cqw;border-radius:0.8cqw;margin-left:1.5cqw;">
+                  <span style="width:2.1cqw;height:2.1cqw;border-radius:0.6cqw;background:rgba(124,108,231,.16);display:flex;align-items:center;justify-content:center;flex:none;"><svg width="1.3cqw" height="1.3cqw" viewBox="0 0 24 24" fill="none" stroke="#a99cf5" stroke-width="2.2"><rect x="3" y="3" width="7" height="7" rx="1.6"></rect><rect x="14" y="3" width="7" height="7" rx="1.6"></rect><rect x="3" y="14" width="7" height="7" rx="1.6"></rect><rect x="14" y="14" width="7" height="7" rx="1.6"></rect></svg></span>
+                  <span style="display:flex;flex-direction:column;min-width:0;"><span style="font-size:1.2cqw;font-weight:600;color:#eef0f6;white-space:nowrap;">Grab Object</span><span style="font-family:'Geist Mono',monospace;font-size:0.82cqw;letter-spacing:0.08em;color:#8a7fd6;">MANAGER</span></span>
+                  <span style="flex:1;"></span>
+                  <svg width="1.3cqw" height="1.3cqw" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+                </div>
+                <div style="display:flex;align-items:center;gap:0.7cqw;padding:0.65cqw 0.7cqw;border-radius:0.8cqw;margin-left:3cqw;background:rgba(34,211,238,.09);border:1px solid rgba(34,211,238,.32);">
+                  <span style="width:2.1cqw;height:2.1cqw;border-radius:0.6cqw;background:rgba(34,211,238,.16);display:flex;align-items:center;justify-content:center;flex:none;"><svg width="1.3cqw" height="1.3cqw" viewBox="0 0 24 24" fill="none" stroke="#5fd0e6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></span>
+                  <span style="display:flex;flex-direction:column;min-width:0;"><span style="font-size:1.2cqw;font-weight:600;color:#fff;white-space:nowrap;">Find Grab Pose</span><span style="font-family:'Geist Mono',monospace;font-size:0.82cqw;letter-spacing:0.08em;color:#5fd0e6;">WORKER</span></span>
+                  <span style="flex:1;"></span>
+                  <svg width="1.3cqw" height="1.3cqw" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+                </div>
+                <div style="display:flex;align-items:center;gap:0.7cqw;padding:0.65cqw 0.7cqw;border-radius:0.8cqw;margin-left:3cqw;">
+                  <span style="width:2.1cqw;height:2.1cqw;border-radius:0.6cqw;background:rgba(34,211,238,.1);display:flex;align-items:center;justify-content:center;flex:none;"><svg width="1.3cqw" height="1.3cqw" viewBox="0 0 24 24" fill="none" stroke="#5a8aa0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></span>
+                  <span style="display:flex;flex-direction:column;min-width:0;"><span style="font-size:1.2cqw;font-weight:600;color:#b9bed0;white-space:nowrap;">Go To</span><span style="font-family:'Geist Mono',monospace;font-size:0.82cqw;letter-spacing:0.08em;color:#5d6480;">WORKER</span></span>
+                  <span style="flex:1;"></span>
+                  <span style="width:1.2cqw;height:1.2cqw;border-radius:50%;border:1.6px solid #39425c;"></span>
+                </div>
+                <div style="display:flex;align-items:center;gap:0.7cqw;padding:0.65cqw 0.7cqw;border-radius:0.8cqw;margin-left:3cqw;">
+                  <span style="width:2.1cqw;height:2.1cqw;border-radius:0.6cqw;background:rgba(34,211,238,.1);display:flex;align-items:center;justify-content:center;flex:none;"><svg width="1.3cqw" height="1.3cqw" viewBox="0 0 24 24" fill="none" stroke="#5a8aa0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></span>
+                  <span style="display:flex;flex-direction:column;min-width:0;"><span style="font-size:1.2cqw;font-weight:600;color:#b9bed0;white-space:nowrap;">Grab</span><span style="font-family:'Geist Mono',monospace;font-size:0.82cqw;letter-spacing:0.08em;color:#5d6480;">WORKER</span></span>
+                  <span style="flex:1;"></span>
+                  <span style="width:1.2cqw;height:1.2cqw;border-radius:50%;border:1.6px solid #39425c;"></span>
+                </div>
+                <div style="display:flex;align-items:center;gap:0.7cqw;padding:0.65cqw 0.7cqw;border-radius:0.8cqw;margin-left:1.5cqw;">
+                  <span style="width:2.1cqw;height:2.1cqw;border-radius:0.6cqw;background:rgba(124,108,231,.16);display:flex;align-items:center;justify-content:center;flex:none;"><svg width="1.3cqw" height="1.3cqw" viewBox="0 0 24 24" fill="none" stroke="#a99cf5" stroke-width="2.2"><rect x="3" y="3" width="7" height="7" rx="1.6"></rect><rect x="14" y="3" width="7" height="7" rx="1.6"></rect><rect x="3" y="14" width="7" height="7" rx="1.6"></rect><rect x="14" y="14" width="7" height="7" rx="1.6"></rect></svg></span>
+                  <span style="display:flex;flex-direction:column;min-width:0;"><span style="font-size:1.2cqw;font-weight:600;color:#b9bed0;white-space:nowrap;">Place Object</span><span style="font-family:'Geist Mono',monospace;font-size:0.82cqw;letter-spacing:0.08em;color:#6a619e;">MANAGER</span></span>
+                  <span style="flex:1;"></span>
+                  <span style="width:1.2cqw;height:1.2cqw;border-radius:50%;border:1.6px solid #39425c;"></span>
+                </div>
+                <div style="display:flex;align-items:center;gap:0.7cqw;padding:0.65cqw 0.7cqw;border-radius:0.8cqw;margin-left:3cqw;">
+                  <span style="width:2.1cqw;height:2.1cqw;border-radius:0.6cqw;background:rgba(34,211,238,.1);display:flex;align-items:center;justify-content:center;flex:none;"><svg width="1.3cqw" height="1.3cqw" viewBox="0 0 24 24" fill="none" stroke="#5a8aa0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></span>
+                  <span style="display:flex;flex-direction:column;min-width:0;"><span style="font-size:1.2cqw;font-weight:600;color:#b9bed0;white-space:nowrap;">Find Place Pose</span><span style="font-family:'Geist Mono',monospace;font-size:0.82cqw;letter-spacing:0.08em;color:#5d6480;">WORKER</span></span>
+                  <span style="flex:1;"></span>
+                  <span style="width:1.2cqw;height:1.2cqw;border-radius:50%;border:1.6px solid #39425c;"></span>
+                </div>
+                <div style="display:flex;align-items:center;gap:0.7cqw;padding:0.65cqw 0.7cqw;border-radius:0.8cqw;margin-left:3cqw;">
+                  <span style="width:2.1cqw;height:2.1cqw;border-radius:0.6cqw;background:rgba(34,211,238,.1);display:flex;align-items:center;justify-content:center;flex:none;"><svg width="1.3cqw" height="1.3cqw" viewBox="0 0 24 24" fill="none" stroke="#5a8aa0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></span>
+                  <span style="display:flex;flex-direction:column;min-width:0;"><span style="font-size:1.2cqw;font-weight:600;color:#b9bed0;white-space:nowrap;">Go To</span><span style="font-family:'Geist Mono',monospace;font-size:0.82cqw;letter-spacing:0.08em;color:#5d6480;">WORKER</span></span>
+                  <span style="flex:1;"></span>
+                  <span style="width:1.2cqw;height:1.2cqw;border-radius:50%;border:1.6px solid #39425c;"></span>
+                </div>
+                <div style="display:flex;align-items:center;gap:0.7cqw;padding:0.65cqw 0.7cqw;border-radius:0.8cqw;margin-left:3cqw;">
+                  <span style="width:2.1cqw;height:2.1cqw;border-radius:0.6cqw;background:rgba(34,211,238,.1);display:flex;align-items:center;justify-content:center;flex:none;"><svg width="1.3cqw" height="1.3cqw" viewBox="0 0 24 24" fill="none" stroke="#5a8aa0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></span>
+                  <span style="display:flex;flex-direction:column;min-width:0;"><span style="font-size:1.2cqw;font-weight:600;color:#b9bed0;white-space:nowrap;">Release</span><span style="font-family:'Geist Mono',monospace;font-size:0.82cqw;letter-spacing:0.08em;color:#5d6480;">WORKER</span></span>
+                  <span style="flex:1;"></span>
+                  <span style="width:1.2cqw;height:1.2cqw;border-radius:50%;border:1.6px solid #39425c;"></span>
+                </div>
+                <div style="display:flex;align-items:center;gap:0.7cqw;padding:0.65cqw 0.7cqw;border-radius:0.8cqw;margin-left:1.5cqw;">
+                  <span style="width:2.1cqw;height:2.1cqw;border-radius:0.6cqw;background:rgba(34,211,238,.1);display:flex;align-items:center;justify-content:center;flex:none;"><svg width="1.3cqw" height="1.3cqw" viewBox="0 0 24 24" fill="none" stroke="#5fd0e6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></span>
+                  <span style="display:flex;flex-direction:column;min-width:0;"><span style="font-size:1.2cqw;font-weight:600;color:#eef0f6;white-space:nowrap;">Get Object</span><span style="font-family:'Geist Mono',monospace;font-size:0.82cqw;letter-spacing:0.08em;color:#5fd0e6;">WORKER</span></span>
+                  <span style="flex:1;"></span>
+                  <svg width="1.3cqw" height="1.3cqw" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+                </div>
+              </div>
+              <div style="flex:1;"></div>
+              <div style="height:1px;background:rgba(255,255,255,.07);"></div>
+              <div style="display:flex;flex-wrap:wrap;gap:0.6cqw;">
+                <span style="display:inline-flex;align-items:center;gap:0.45cqw;font-family:'Geist Mono',monospace;font-size:0.85cqw;color:#8a90a6;"><span style="width:0.8cqw;height:0.8cqw;border-radius:50%;border:1.4px solid #4a5270;"></span>Queued</span>
+                <span style="display:inline-flex;align-items:center;gap:0.45cqw;font-family:'Geist Mono',monospace;font-size:0.85cqw;color:#8a90a6;"><span style="width:0.8cqw;height:0.8cqw;border-radius:50%;background:#22d3ee;"></span>Running</span>
+                <span style="display:inline-flex;align-items:center;gap:0.45cqw;font-family:'Geist Mono',monospace;font-size:0.85cqw;color:#8a90a6;"><span style="width:0.8cqw;height:0.8cqw;border-radius:50%;background:#34d399;"></span>Done</span>
+                <span style="display:inline-flex;align-items:center;gap:0.45cqw;font-family:'Geist Mono',monospace;font-size:0.85cqw;color:#8a90a6;"><span style="width:0.8cqw;height:0.8cqw;border-radius:50%;background:#ef4444;"></span>Failed</span>
+              </div>
+            </div>
+
+            <!-- MIDDLE: WORKER DETAIL -->
+            <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:1.8cqw;">
+              <div style="background:#0c1020;border:1px solid rgba(255,255,255,.07);border-radius:1.4cqw;padding:1.6cqw;">
+                <div style="display:flex;align-items:center;gap:0.8cqw;margin-bottom:0.5cqw;">
+                  <span style="width:2.4cqw;height:2.4cqw;border-radius:0.7cqw;background:rgba(34,211,238,.14);display:flex;align-items:center;justify-content:center;flex:none;"><svg width="1.5cqw" height="1.5cqw" viewBox="0 0 24 24" fill="none" stroke="#5fd0e6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></span>
+                  <span style="font-size:1.55cqw;font-weight:700;color:#fff;white-space:nowrap;">Find Grab Pose</span>
+                  <span style="font-size:1.55cqw;font-weight:600;color:#5fd0e6;white-space:nowrap;">— Worker</span>
+                  <span style="flex:1;"></span>
+                  <span style="display:inline-flex;align-items:center;gap:0.5cqw;font-size:1.2cqw;font-weight:600;color:#34d399;"><svg width="1.3cqw" height="1.3cqw" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Done · snapshot</span>
+                </div>
+                <div style="font-family:'Geist Mono',monospace;font-size:1cqw;color:#6f778f;margin-bottom:1.4cqw;">4 specs · 13 problems</div>
+                <div style="font-size:1.1cqw;font-weight:600;color:#aab0c4;margin-bottom:0.8cqw;">Plan</div>
+                <div style="display:flex;align-items:center;gap:0.8cqw;margin-bottom:1.6cqw;">
+                  <div style="flex:1;border:1px solid rgba(34,211,238,.4);background:rgba(34,211,238,.07);border-radius:1cqw;padding:0.9cqw 1cqw;">
+                    <div style="font-size:1.15cqw;font-weight:600;color:#fff;">✓ Find Grab Pose</div>
+                    <div style="font-family:'Geist Mono',monospace;font-size:0.95cqw;color:#5fd0e6;margin-top:0.3cqw;">4/4 pass</div>
+                  </div>
+                  <span style="color:#4a5270;font-size:1.4cqw;">→</span>
+                  <div style="flex:1;border:1px solid rgba(255,255,255,.08);border-radius:1cqw;padding:0.9cqw 1cqw;">
+                    <div style="font-size:1.15cqw;font-weight:600;color:#b9bed0;">Go To</div>
+                    <div style="font-family:'Geist Mono',monospace;font-size:0.95cqw;color:#6f778f;margin-top:0.3cqw;">0/2 pass</div>
+                  </div>
+                  <span style="color:#4a5270;font-size:1.4cqw;">→</span>
+                  <div style="flex:1;border:1px solid rgba(255,255,255,.08);border-radius:1cqw;padding:0.9cqw 1cqw;">
+                    <div style="font-size:1.15cqw;font-weight:600;color:#b9bed0;">Grab</div>
+                    <div style="font-family:'Geist Mono',monospace;font-size:0.95cqw;color:#6f778f;margin-top:0.3cqw;">0/2 pass</div>
+                  </div>
+                </div>
+                <div style="display:flex;align-items:center;gap:0.7cqw;margin-bottom:0.9cqw;">
+                  <span style="font-size:1.3cqw;font-weight:700;color:#fff;">Specifications</span>
+                  <span style="font-family:'Geist Mono',monospace;font-size:1cqw;color:#070912;background:#5fd0e6;padding:0.15cqw 0.7cqw;border-radius:100px;font-weight:600;">4</span>
+                </div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:1cqw;">
+                  <div style="border:1px solid rgba(255,255,255,.08);border-radius:1cqw;padding:1cqw 1.1cqw;">
+                    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.7cqw;"><span style="font-size:1.1cqw;font-weight:600;color:#eef0f6;white-space:nowrap;">Object Inside Grip Area</span><span style="font-family:'Geist Mono',monospace;font-size:0.85cqw;font-weight:600;color:#34d399;border:1px solid rgba(52,211,153,.32);padding:0.15cqw 0.55cqw;border-radius:0.5cqw;">PASS</span></div>
+                    <div style="font-family:'Geist Mono',monospace;font-size:1.25cqw;color:#fff;margin-bottom:0.6cqw;"><span style="color:#5fd0e6;">P</span> 0.85 <span style="color:#6f778f;font-size:1cqw;">±0.07</span></div>
+                    <div style="position:relative;height:0.55cqw;background:rgba(255,255,255,.08);border-radius:100px;overflow:hidden;"><div style="position:absolute;inset:0 15% 0 0;background:linear-gradient(90deg,#22d3ee,#34d399);border-radius:100px;"></div></div>
+                    <div style="position:relative;height:0.9cqw;"><span style="position:absolute;left:50%;top:-0.5cqw;width:1.5px;height:0.9cqw;background:#6f778f;"></span></div>
+                    <div style="display:flex;justify-content:space-between;font-family:'Geist Mono',monospace;font-size:0.85cqw;color:#8a90a6;"><span>0.85</span><span>≥ 0.50</span></div>
+                  </div>
+                  <div style="border:1px solid rgba(255,255,255,.08);border-radius:1cqw;padding:1cqw 1.1cqw;">
+                    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.7cqw;"><span style="font-size:1.1cqw;font-weight:600;color:#eef0f6;white-space:nowrap;">Simulated Contact Area</span><span style="font-family:'Geist Mono',monospace;font-size:0.85cqw;font-weight:600;color:#34d399;border:1px solid rgba(52,211,153,.32);padding:0.15cqw 0.55cqw;border-radius:0.5cqw;">PASS</span></div>
+                    <div style="font-family:'Geist Mono',monospace;font-size:1.25cqw;color:#fff;margin-bottom:0.6cqw;"><span style="color:#5fd0e6;">P</span> 0.81 <span style="color:#6f778f;font-size:1cqw;">±0.13</span></div>
+                    <div style="position:relative;height:0.55cqw;background:rgba(255,255,255,.08);border-radius:100px;overflow:hidden;"><div style="position:absolute;inset:0 19% 0 0;background:linear-gradient(90deg,#22d3ee,#34d399);border-radius:100px;"></div></div>
+                    <div style="position:relative;height:0.9cqw;"><span style="position:absolute;left:50%;top:-0.5cqw;width:1.5px;height:0.9cqw;background:#6f778f;"></span></div>
+                    <div style="display:flex;justify-content:space-between;font-family:'Geist Mono',monospace;font-size:0.85cqw;color:#8a90a6;"><span>0.81</span><span>≥ 0.50</span></div>
+                  </div>
+                  <div style="border:1px solid rgba(255,255,255,.08);border-radius:1cqw;padding:1cqw 1.1cqw;">
+                    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.7cqw;"><span style="font-size:1.1cqw;font-weight:600;color:#eef0f6;white-space:nowrap;">Single Object Grabbed</span><span style="font-family:'Geist Mono',monospace;font-size:0.85cqw;font-weight:600;color:#34d399;border:1px solid rgba(52,211,153,.32);padding:0.15cqw 0.55cqw;border-radius:0.5cqw;">PASS</span></div>
+                    <div style="font-family:'Geist Mono',monospace;font-size:1.25cqw;color:#fff;margin-bottom:0.6cqw;"><span style="color:#5fd0e6;">P</span> 0.84 <span style="color:#6f778f;font-size:1cqw;">±0.08</span></div>
+                    <div style="position:relative;height:0.55cqw;background:rgba(255,255,255,.08);border-radius:100px;overflow:hidden;"><div style="position:absolute;inset:0 16% 0 0;background:linear-gradient(90deg,#22d3ee,#34d399);border-radius:100px;"></div></div>
+                    <div style="position:relative;height:0.9cqw;"><span style="position:absolute;left:50%;top:-0.5cqw;width:1.5px;height:0.9cqw;background:#6f778f;"></span></div>
+                    <div style="display:flex;justify-content:space-between;font-family:'Geist Mono',monospace;font-size:0.85cqw;color:#8a90a6;"><span>0.84</span><span>≥ 0.50</span></div>
+                  </div>
+                  <div style="border:1px solid rgba(255,255,255,.08);border-radius:1cqw;padding:1cqw 1.1cqw;">
+                    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.7cqw;"><span style="font-size:1.1cqw;font-weight:600;color:#eef0f6;white-space:nowrap;">Valid IK</span><span style="font-family:'Geist Mono',monospace;font-size:0.85cqw;font-weight:600;color:#34d399;border:1px solid rgba(52,211,153,.32);padding:0.15cqw 0.55cqw;border-radius:0.5cqw;">PASS</span></div>
+                    <div style="font-family:'Geist Mono',monospace;font-size:1.25cqw;color:#fff;margin-bottom:0.6cqw;"><span style="color:#5fd0e6;">P</span> 0.91 <span style="color:#6f778f;font-size:1cqw;">±0.09</span></div>
+                    <div style="position:relative;height:0.55cqw;background:rgba(255,255,255,.08);border-radius:100px;overflow:hidden;"><div style="position:absolute;inset:0 9% 0 0;background:linear-gradient(90deg,#22d3ee,#34d399);border-radius:100px;"></div></div>
+                    <div style="position:relative;height:0.9cqw;"><span style="position:absolute;left:50%;top:-0.5cqw;width:1.5px;height:0.9cqw;background:#6f778f;"></span></div>
+                    <div style="display:flex;justify-content:space-between;font-family:'Geist Mono',monospace;font-size:0.85cqw;color:#8a90a6;"><span>0.91</span><span>≥ 0.50</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <div style="background:#0c1020;border:1px solid rgba(255,255,255,.07);border-radius:1.4cqw;padding:1.4cqw;">
+                <div style="display:flex;align-items:center;gap:1.2cqw;margin-bottom:1cqw;">
+                  <span style="font-size:1.2cqw;font-weight:600;color:#fff;border-bottom:2px solid #22d3ee;padding-bottom:0.4cqw;">Scene view</span>
+                  <span style="font-size:1.2cqw;font-weight:500;color:#6f778f;">Camera · Sensor view</span>
+                </div>
+                <div style="border-radius:1cqw;overflow:hidden;border:1px solid rgba(255,255,255,.06);aspect-ratio:790 / 460;"><img src="/assets/scene_render.png" style="width:100%;height:100%;object-fit:cover;display:block;" alt="Simulation scene" loading="lazy"></div>
+              </div>
+            </div>
+
+            <!-- RIGHT: PROBLEMS -->
+            <div style="flex:none;width:27cqw;background:#0c1020;border:1px solid rgba(255,255,255,.07);border-radius:1.4cqw;padding:1.4cqw;display:flex;flex-direction:column;gap:0.9cqw;">
+              <div style="display:flex;align-items:center;gap:0.7cqw;">
+                <svg width="1.6cqw" height="1.6cqw" viewBox="0 0 24 24" fill="none" stroke="#f5b54a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v5M12 16h.01"></path></svg>
+                <span style="font-size:1.3cqw;font-weight:700;color:#fff;">Problems</span>
+                <span style="font-family:'Geist Mono',monospace;font-size:1cqw;color:#fff;background:rgba(245,181,74,.18);padding:0.15cqw 0.7cqw;border-radius:100px;font-weight:600;">13</span>
+              </div>
+              <div style="border:1px solid rgba(255,255,255,.07);border-radius:0.9cqw;padding:0.9cqw 1cqw;">
+                <div style="font-size:1.1cqw;font-weight:600;color:#eef0f6;margin-bottom:0.5cqw;">Out of range object</div>
+                <div style="font-family:'Geist Mono',monospace;font-size:1.15cqw;color:#f87171;margin-bottom:0.5cqw;">P 0.29 <span style="color:#6f778f;font-size:0.92cqw;">±0.10</span></div>
+                <div style="position:relative;height:0.5cqw;background:rgba(255,255,255,.08);border-radius:100px;overflow:hidden;"><div style="position:absolute;inset:0 71% 0 0;background:#ef4444;border-radius:100px;"></div><span style="position:absolute;left:50%;top:0;width:1.5px;height:100%;background:#8a90a6;"></span></div>
+                <div style="display:flex;justify-content:space-between;font-family:'Geist Mono',monospace;font-size:0.82cqw;color:#8a90a6;margin-top:0.35cqw;"><span>0.29</span><span>0.50</span></div>
+              </div>
+              <div style="border:1px solid rgba(255,255,255,.07);border-radius:0.9cqw;padding:0.9cqw 1cqw;">
+                <div style="font-size:1.1cqw;font-weight:600;color:#eef0f6;margin-bottom:0.5cqw;">Cube too large</div>
+                <div style="font-family:'Geist Mono',monospace;font-size:1.15cqw;color:#f87171;margin-bottom:0.5cqw;">P 0.43 <span style="color:#6f778f;font-size:0.92cqw;">±0.06</span></div>
+                <div style="position:relative;height:0.5cqw;background:rgba(255,255,255,.08);border-radius:100px;overflow:hidden;"><div style="position:absolute;inset:0 57% 0 0;background:#ef4444;border-radius:100px;"></div><span style="position:absolute;left:50%;top:0;width:1.5px;height:100%;background:#8a90a6;"></span></div>
+                <div style="display:flex;justify-content:space-between;font-family:'Geist Mono',monospace;font-size:0.82cqw;color:#8a90a6;margin-top:0.35cqw;"><span>0.43</span><span>0.50</span></div>
+              </div>
+              <div style="border:1px solid rgba(255,255,255,.07);border-radius:0.9cqw;padding:0.9cqw 1cqw;">
+                <div style="font-size:1.1cqw;font-weight:600;color:#eef0f6;margin-bottom:0.5cqw;">Too close</div>
+                <div style="font-family:'Geist Mono',monospace;font-size:1.15cqw;color:#f87171;margin-bottom:0.5cqw;">P 0.47 <span style="color:#6f778f;font-size:0.92cqw;">±0.11</span></div>
+                <div style="position:relative;height:0.5cqw;background:rgba(255,255,255,.08);border-radius:100px;overflow:hidden;"><div style="position:absolute;inset:0 53% 0 0;background:#ef4444;border-radius:100px;"></div><span style="position:absolute;left:50%;top:0;width:1.5px;height:100%;background:#8a90a6;"></span></div>
+                <div style="display:flex;justify-content:space-between;font-family:'Geist Mono',monospace;font-size:0.82cqw;color:#8a90a6;margin-top:0.35cqw;"><span>0.47</span><span>0.50</span></div>
+              </div>
+              <div style="border:1px solid rgba(255,255,255,.07);border-radius:0.9cqw;padding:0.9cqw 1cqw;">
+                <div style="font-size:1.1cqw;font-weight:600;color:#eef0f6;margin-bottom:0.5cqw;">Too far</div>
+                <div style="font-family:'Geist Mono',monospace;font-size:1.15cqw;color:#f87171;margin-bottom:0.5cqw;">P 0.39 <span style="color:#6f778f;font-size:0.92cqw;">±0.12</span></div>
+                <div style="position:relative;height:0.5cqw;background:rgba(255,255,255,.08);border-radius:100px;overflow:hidden;"><div style="position:absolute;inset:0 61% 0 0;background:#ef4444;border-radius:100px;"></div><span style="position:absolute;left:50%;top:0;width:1.5px;height:100%;background:#8a90a6;"></span></div>
+                <div style="display:flex;justify-content:space-between;font-family:'Geist Mono',monospace;font-size:0.82cqw;color:#8a90a6;margin-top:0.35cqw;"><span>0.39</span><span>0.50</span></div>
+              </div>
+              <div style="border:1px solid rgba(255,255,255,.07);border-radius:0.9cqw;padding:0.9cqw 1cqw;">
+                <div style="font-size:1.1cqw;font-weight:600;color:#eef0f6;margin-bottom:0.5cqw;">Surface too slippery</div>
+                <div style="font-family:'Geist Mono',monospace;font-size:1.15cqw;color:#f87171;margin-bottom:0.5cqw;">P 0.49 <span style="color:#6f778f;font-size:0.92cqw;">±0.11</span></div>
+                <div style="position:relative;height:0.5cqw;background:rgba(255,255,255,.08);border-radius:100px;overflow:hidden;"><div style="position:absolute;inset:0 51% 0 0;background:#ef4444;border-radius:100px;"></div><span style="position:absolute;left:50%;top:0;width:1.5px;height:100%;background:#8a90a6;"></span></div>
+                <div style="display:flex;justify-content:space-between;font-family:'Geist Mono',monospace;font-size:0.82cqw;color:#8a90a6;margin-top:0.35cqw;"><span>0.49</span><span>0.50</span></div>
+              </div>
+              <div style="flex:1;"></div>
+              <div style="text-align:center;font-family:'Geist Mono',monospace;font-size:0.95cqw;color:#6f778f;padding-top:0.4cqw;">+ 8 more problems</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="container" style="padding-top:70px;padding-bottom:90px">
+    <div class="cta cta-center">
+      <div class="glow glow-violet" style="top:-140px;left:50%;transform:translateX(-50%);width:700px;height:480px"></div>
+      <div class="inner">
+        <h2 class="h2-sm" style="color:#fff;margin-bottom:16px">See the platform on your problem</h2>
+        <p>Bring a critical decision you'd like to make autonomous — we'll walk it through the platform together.</p>
+        <div class="cta-actions"><a href="/contact/" class="btn btn-white">Request a demo</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div>
+        <a href="/" class="brand" style="margin-bottom:16px"><span class="brand-mark"><span></span></span><span class="brand-name">Abstrae</span></a>
+        <p>Expert-guided autonomy for critical decision-making. Austin, TX.</p>
+      </div>
+      <div class="footer-col"><div class="col-head">Product</div><div class="links"><a href="/platform/">Platform</a><a href="/services/">Services</a><a href="/use-cases/">Use Cases</a></div></div>
+      <div class="footer-col"><div class="col-head">Company</div><div class="links"><a href="/about/">About</a><a href="/contact/">Contact</a></div></div>
+      <div class="footer-col"><div class="col-head">Get started</div><div class="links"><a href="/contact/">Request a demo</a><a href="/contact/">Discovery call</a></div></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Abstrae. All rights reserved.</span>
+      <span class="mono">Austin, TX</span>
+    </div>
+  </footer>
+
+  <script src="/assets/site.js"></script>
+</body>
+</html>
